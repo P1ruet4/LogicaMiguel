@@ -5,9 +5,9 @@ programa
 	{
 		cadeia mensagem
 		inteiro qnt
-		escreva("Qual mensagem voce deseja:")
+		escreva("Qual mensagem voce ta:")
 		leia(mensagem)
-		escreva("Quantas mensagens você deseja que apareça:")
+		escreva("Quantas mensagens você quer:")
 		leia(qnt)
 		Gerador(qnt,mensagem)
 	}
