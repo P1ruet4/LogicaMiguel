@@ -1,18 +1,23 @@
 programa
 {
-inteiro num = 0, numTestador, incremento
-	
+	inteiro distancia
+	real passagem
 	funcao inicio()
 	{
-		escreva("Digite um numero que voce quer que faça a contagem: ")
-		leia(numTestador)
-		escreva("Digite um numero que voce quer incrementar: ")
-		leia(incremento)
-	enquanto (num <= numTestador + incremento){
-		escreva("A contagem é: " , num, "\n")
-		num++
+		escreva("distancia percorrida")
+		leia(distancia)
+
+		se(distancia < 200)
+		{
+			passagem = distancia * 0.50
+			escreva("o valor será de: ", passagem)
 		}
-		escreva("ACABOUUUUUUUUUUUUUUUUUUU!u!u!u!u!")
+
+		senao
+		{
+			passagem = distancia * 0.45
+			escreva(" o valor será de", passagem)
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -20,7 +25,7 @@ inteiro num = 0, numTestador, incremento
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 333; 
+ * @POSICAO-CURSOR = 264; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
